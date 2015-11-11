@@ -24,15 +24,11 @@
 
 #include "platform/util/util.h"
 #include "PVRFilmonData.h"
-#include "kodi/xbmc_pvr_dll.h"
-#include "kodi/libKODI_guilib.h"
+#include "mrmc/xbmc_pvr_dll.h"
+#include "mrmc/libKODI_guilib.h"
 
 using namespace std;
 using namespace ADDON;
-
-#ifdef TARGET_WINDOWS
-#define snprintf _snprintf
-#endif
 
 bool m_bCreated = false;
 ADDON_STATUS m_CurStatus = ADDON_STATUS_UNKNOWN;
